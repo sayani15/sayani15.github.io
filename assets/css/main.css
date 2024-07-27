@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+general-information	{
+    font-size: 15px;
+    font-style: revert;
+}
+
 ol, ul {
 	list-style: none;
 }
