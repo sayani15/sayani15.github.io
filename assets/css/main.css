@@ -1305,7 +1305,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			.row {
 				display: flex;
@@ -1548,7 +1548,7 @@ input, select, textarea {
 							padding-top: 3rem;
 						}
 
-		}
+		} */
 
 		@media screen and (max-width: 480px) {
 
@@ -2650,7 +2650,7 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
-
+/* 
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
@@ -2661,7 +2661,7 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
-		}
+		} */
 
 	a.image {
 		overflow: hidden;
@@ -2992,14 +2992,14 @@ input, select, textarea {
 			}
 
 		}
-
+/* 
 		@media screen and (max-width: 736px) {
 
 			header.major {
 				margin: 0 0 2rem 0;
 			}
 
-		}
+		} */
 
 	header.major .date:before, header.major .date:after {
 		border-top-color: #eeeeee;
@@ -3471,7 +3471,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
@@ -3493,7 +3493,7 @@ input, select, textarea {
 					display: none;
 				}
 
-		}
+		} */
 
 /* Header */
 
@@ -3595,7 +3595,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			#header {
 				padding-bottom: 3rem;
@@ -3606,7 +3606,7 @@ input, select, textarea {
 					border-width: 3px !important;
 				}
 
-		}
+		} */
 
 /* Nav */
 
@@ -3808,7 +3808,7 @@ input, select, textarea {
 				}
 
 			}
-
+/* 
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
@@ -3826,7 +3826,7 @@ input, select, textarea {
 						margin: 0 0 1.5rem 0;
 					}
 
-			}
+			} */
 
 		#main > .posts {
 			display: -moz-flex;
@@ -3899,7 +3899,7 @@ input, select, textarea {
 
 			}
 
-			@media screen and (max-width: 736px) {
+			/* @media screen and (max-width: 736px) {
 
 				#main > .posts > * {
 					width: 100%;
@@ -3940,7 +3940,7 @@ input, select, textarea {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
 
-		}
+		} */
 
 		@media screen and (max-width: 480px) {
 
@@ -4346,7 +4346,7 @@ input, select, textarea {
 				}
 
 		}
-
+/* 
 		@media screen and (max-width: 736px) {
 
 			#footer > section {
@@ -4377,7 +4377,7 @@ input, select, textarea {
 						padding: 2rem;
 					}
 
-		}
+		} */
 
 		@media screen and (max-width: 480px) {
 
@@ -4546,7 +4546,7 @@ input, select, textarea {
 			}
 
 		}
-
+/* 
 		@media screen and (max-width: 736px) {
 
 			#navPanelToggle {
@@ -4554,7 +4554,7 @@ input, select, textarea {
 				padding: 0.25rem 1rem;
 			}
 
-		}
+		} */
 
 	#navPanel {
 		-moz-transform: translateX(20rem);
@@ -4650,7 +4650,7 @@ input, select, textarea {
 			#navPanel .close:hover {
 				color: #212931;
 			}
-
+/* 
 			@media screen and (max-width: 736px) {
 
 				#navPanel .close {
@@ -4658,7 +4658,7 @@ input, select, textarea {
 					line-height: 4rem;
 				}
 
-			}
+			} */
 
 		@media screen and (max-width: 980px) {
 
@@ -4667,14 +4667,14 @@ input, select, textarea {
 			}
 
 		}
-
+/* 
 		@media screen and (max-width: 736px) {
 
 			#navPanel {
 				padding: 2.5rem 1.75rem;
 			}
 
-		}
+		} */
 
 	@media screen and (max-width: 980px) {
 
