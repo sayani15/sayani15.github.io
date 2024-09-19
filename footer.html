@@ -9,9 +9,199 @@
       display: none;
     }
   }
+  .flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}  
+.flex-item {
+  background: tomato;
+    padding: 5px;
+    width: 30%;
+    min-width: 200px;
+    height: auto;
+    margin: 10px;
+    /* line-height: 100px; */
+    /* color: white; */
+    /* font-weight: bold; */
+    /* font-size: 2em; */
+    text-align: center;
+}
 </style>
 
-<div class="hidden-if-small">
+<ul class="flex-container wrap">
+  <li class="flex-item">
+    <div>ADDRESS</div>
+    <div>Otterbourne Village Hall</div>
+    <div>Cranbourne Dr</div>
+    <div>Otterbourne</div>
+    <div>Winchester</div>
+    <div>SO21 2ES</div>
+  </li>
+  <li class="flex-item">
+    <div>EMAIL ADDRESS</div>
+    <div>rhythm2k@gmail.com</div>
+    <div>FOLLOW US</div>
+    <ul class="icons">
+      <li>
+        <a
+          href="https://www.facebook.com/share/eM8c31HNpvf6dS8n/?mibextid=LQQJ4d"
+          class="icon brands fa-facebook-f"
+          target="_blank"
+          ><span class="label">Facebook</span></a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="icon brands fa-instagram"
+          target="_blank"
+          ><span class="label">Instagram</span></a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/@taranginiindiandanceacadem7416"
+          class="icon brands fa-youtube"
+          target="_blank"
+          ><span class="label">Youtube</span></a
+        >
+      </li>
+    </ul>
+  </div>
+  </li>
+  <li class="flex-item" style="align-content: center;">  
+    <img height="80%" width="80%" src="images/tarangini-logo-no-bg.png">
+  </li>
+</ul>
+
+<!-- <div style="display: flex; justify-content: space-around;" class="hidden-if-small">
+
+  <div style="width: 30%; height: 100%;">
+    <div>ADDRESS</div>
+    <div>Otterbourne Village Hall</div>
+    <div>Cranbourne Dr</div>
+    <div>Otterbourne</div>
+    <div>Winchester</div>
+    <div>SO21 2ES</div>
+  </div>
+  <div style="display: flex; flex-direction: column; width: 30%; height: 100%;">
+    <div>EMAIL ADDRESS</div>
+    <p>rhythm2k@gmail.com</p>
+    <div>FOLLOW US</div>
+    <ul class="icons">
+      <li>
+        <a
+          style="color: white"
+          href="https://www.facebook.com/share/eM8c31HNpvf6dS8n/?mibextid=LQQJ4d"
+          class="icon brands fa-facebook-f"
+          target="_blank"
+          ><span class="label">Facebook</span></a
+        >
+      </li>
+      <li>
+        <a
+          style="color: white"
+          href="#"
+          class="icon brands fa-instagram"
+          target="_blank"
+          ><span class="label">Instagram</span></a
+        >
+      </li>
+      <li>
+        <a
+          style="color: white"
+          href="https://www.youtube.com/@taranginiindiandanceacadem7416"
+          class="icon brands fa-youtube"
+          target="_blank"
+          ><span class="label">Youtube</span></a
+        >
+      </li>
+    </ul>
+  </div>
+  <div style="width: 30%; height: 100%;"><img height="80%" width="80%" src="images/tarangini-logo-no-bg.png"></div> -->
+  <!-- <article> 
+    <h2 style="color: white;">CONTACT DETAILS</h2>
+    <div
+      style="
+        flex-flow: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      "
+    >
+      <div
+        style="display: flex; flex-direction: column; margin: 3%; width: 60%"
+      >
+        <h2 style="color: white">ADDRESS:</h2>
+        <h3 style="margin: 0; margin-top: 3%; color: white"> Otterbourne Village Hall</h3>
+        <h3 style="margin: 0; margin-top: 3%; color: white">Cranbourne Dr</h3>
+        <h3 style="margin: 0; margin-top: 3%; color: white">Otterbourne</h3>
+        <h3 style="margin: 0; margin-top: 3%; color: white">Winchester</h3>
+        <h3 style="margin: 0; margin-top: 3%; color: white">SO21 2ES</h3>
+      </div>
+      <div
+        style="display: flex; flex-direction: column; margin: 3%; width: 60%"
+      >
+        <h2 style="color: white">EMAIL ADDRESS:</h2>
+        <h3 style="color: white">rhythm2k@gmail.com</h3>
+
+        <h2 style="color: white">FOLLOW US:</h2>
+        <ul class="icons">
+          <li>
+            <a
+              style="color: white"
+              href="https://www.facebook.com/share/eM8c31HNpvf6dS8n/?mibextid=LQQJ4d"
+              class="icon brands fa-facebook-f"
+              target="_blank"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              style="color: white"
+              href="#"
+              class="icon brands fa-instagram"
+              target="_blank"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              style="color: white"
+              href="https://www.youtube.com/@taranginiindiandanceacadem7416"
+              class="icon brands fa-youtube"
+              target="_blank"
+              ><span class="label">Youtube</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; width: 60%">
+        <a class="image fit"
+          ><img
+            src="images/tarangini-logo-no-bg.png"
+            style="height: 230; width: auto"
+        /></a>
+      </div>
+    </div>
+  </article>  -->
+</div>
+
+
+<!-- <div class="hidden-if-large">
   <article>
     <h2 style="color: white;">CONTACT DETAILS</h2>
     <div
@@ -78,77 +268,7 @@
       </div>
     </div>
   </article>
-</div>
-
-
-<div class="hidden-if-large">
-  <article>
-    <h2 style="color: white;">CONTACT DETAILS</h2>
-    <div
-      style="
-        flex-flow: wrap;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      "
-    >
-      <div
-        style="display: flex; flex-direction: column; margin: 3%; width: 60%"
-      >
-        <h2 style="color: white">ADDRESS:</h2>
-        <h3 style="margin: 0; margin-top: 3%; color: white"> Otterbourne Village Hall</h3>
-        <h3 style="margin: 0; margin-top: 3%; color: white">Cranbourne Dr</h3>
-        <h3 style="margin: 0; margin-top: 3%; color: white">Otterbourne</h3>
-        <h3 style="margin: 0; margin-top: 3%; color: white">Winchester</h3>
-        <h3 style="margin: 0; margin-top: 3%; color: white">SO21 2ES</h3>
-      </div>
-      <div
-        style="display: flex; flex-direction: column; margin: 3%; width: 60%"
-      >
-        <h2 style="color: white">EMAIL ADDRESS:</h2>
-        <h3 style="color: white">rhythm2k@gmail.com</h3>
-
-        <h2 style="color: white">FOLLOW US:</h2>
-        <ul class="icons">
-          <li>
-            <a
-              style="color: white"
-              href="https://www.facebook.com/share/eM8c31HNpvf6dS8n/?mibextid=LQQJ4d"
-              class="icon brands fa-facebook-f"
-              target="_blank"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a
-              style="color: white"
-              href="#"
-              class="icon brands fa-instagram"
-              target="_blank"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a
-              style="color: white"
-              href="https://www.youtube.com/@taranginiindiandanceacadem7416"
-              class="icon brands fa-youtube"
-              target="_blank"
-              ><span class="label">Youtube</span></a
-            >
-          </li>
-        </ul>
-      </div>
-      <div style="display: flex; flex-direction: column; width: 60%">
-        <a class="image fit"
-          ><img
-            src="images/tarangini-logo-no-bg.png"
-            style="height: 230; width: auto"
-        /></a>
-      </div>
-    </div>
-  </article>
-</div>
+</div> -->
 
 <section class="posts">
   <link rel="stylesheet" href="assets/css/main.css" />
