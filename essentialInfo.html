@@ -4,6 +4,53 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<style>
+	@media screen and (max-width: 500px) {
+	  div.hidden-if-small {
+		display: none;
+	  }
+	}
+	@media screen and (min-width: 501px) {
+	  div.hidden-if-large {
+		display: none;
+	  }
+	}
+	.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border: 1px solid silver;
+	-ms-box-orient: horizontal;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	color: white;
+  }
+  .wrap    { 
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+  }  
+  .flex-item {
+	background: #6c6464;
+	  padding: 5px;
+	  width: 30%;
+	  min-width: 200px;
+	  height: auto;
+	  margin: 10px;
+	  /* line-height: 100px; */
+	  /* color: white; */
+	  /* font-weight: bold; */
+	  /* font-size: 2em; */
+	  text-align: center;
+  }
+  .social {
+	color: white;
+  }
+  </style>
 <html>
 	<head>
 		<title>Tarangini Dance Academy</title>
@@ -75,8 +122,51 @@
 								<p class="general-information">For further details, please contact founder Dalia Pathak with the "contact us" page.</p>
 							</article>
 						</section>
-						<div style="width: 100%; height: 63vh; background-color: rgb(108, 100, 100);"><iframe src="footer.html" style="height: 90%; width: 100%;"></iframe></div>
-
+							<!-- footer -->
+							<ul class="flex-container wrap">
+								<li class="flex-item">
+									<div>ADDRESS</div>
+									<div>Otterbourne Village Hall</div>
+									<div>Cranbourne Dr</div>
+									<div>Otterbourne</div>
+									<div>Winchester</div>
+									<div>SO21 2ES</div>
+								</li>
+								<li class="flex-item">
+									<div>EMAIL ADDRESS</div>
+									<div>rhythm2k@gmail.com</div>
+									<div>FOLLOW US</div>
+									<ul class="icons">
+									<li>
+										<a
+										href="https://www.facebook.com/share/eM8c31HNpvf6dS8n/?mibextid=LQQJ4d"
+										class="icon brands fa-facebook-f social"
+										target="_blank"
+										><span class="label">Facebook</span></a
+										>
+									</li>
+									<li>
+										<a
+										href="#"
+										class="icon brands fa-instagram social"
+										target="_blank"
+										><span class="label">Instagram</span></a
+										>
+									</li>
+									<li>
+										<a
+										href="https://www.youtube.com/@taranginiindiandanceacadem7416"
+										class="icon brands fa-youtube social"
+										target="_blank"
+										><span class="label">Youtube</span></a
+										>
+									</li>
+									</ul>
+								</li>
+								<li class="flex-item" style="align-content: center;">  
+									<img height="80%" width="80%" src="images/tarangini-logo-no-bg.png">
+								</li>
+								</ul>
 					</div>
 
 				<!-- Copyright -->
