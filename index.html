@@ -6,7 +6,16 @@
 -->
 <style>
 
-	.flex-container {
+.flex-container {
+	justify-content: center;
+	color: black;
+  }	
+  .flex-container-footer {
+
+	justify-content: center;
+	color: white;
+  }
+  .flex-container-shared {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -18,24 +27,26 @@
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
-	color: white;
   }
   .wrap    { 
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
   }  
-  .flex-item {
+  .flex-item-footer {
 	background: #6c6464;
 	  padding: 5px;
 	  width: 30%;
 	  min-width: 200px;
 	  height: auto;
 	  margin: 10px;
-	  /* line-height: 100px; */
-	  /* color: white; */
-	  /* font-weight: bold; */
-	  /* font-size: 2em; */
+	  text-align: center;
+  }  
+  .flex-item {
+	  padding: 25px;
+	  width: 46%;
+	  min-width: 400px;
+	  height: auto;
+	  margin: 10px;
 	  text-align: center;
   }
   .social {
@@ -60,18 +71,13 @@
 					<div id="intro">
 						<h1>Tarangini Dance Academy</h1>
 						<p>Authentic Indian dance classes.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
 					</div>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="essentialInfo.html">Essential Info </a></li>
-							<li><a href="elements.html">Elements Reference</a></li>	
-						
+							<li><a href="essentialInfo.html">Essential Info </a></li>				
 						</ul>
 
 						<ul class="icons">
@@ -107,45 +113,48 @@
 									   students to shine alongside experienced performers.						
 									   <a href="https://www.youtube.com/watch?v=nNrvUG43rHQ"> Watch the performance here! </a>
 								</p>
-
-								<ul class="actions special">
-									<li><a href="#" class="button">Learn more about our annual events</a></li>
-								</ul>
-
 							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Southampton Mela 2024</a></h2>
-									</header>
-									<a class="image fit"><img style="max-height: 30vh; max-width: fit-content;" src="images/southampton-mela-2024.jpg" alt="" /></a>
-									<p>Tarangini Dance Academy was honored to be a part of Southampton Mela 2024, invited by Art Asia to
-										 showcase their artistry on both the main and community stages. Embracing the theme "Monsoon 
-										 Magic of India," the academy delivered captivating performances that reflected the vibrant and
-										  enchanting essence of the monsoon season through classical and semi-classical dance. 
-										  <a href="https://www.youtube.com/watch?v=0b-g7XaAvYE"> Watch the performance here! </a></p>
-								  
-
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">HPCA Durga Puja 2023</a></h2>
-									</header>
-									<a class="image fit"><img style="max-height: 30vh; max-width: fit-content;" src="images/durga-puja-2023.jpg" alt="" /></a>
-									<p>At the HPCA's Durga Puja show of 2022, Tarangini Dance Academy represented the state of Odisha with a 
-										performance that attempted to highlight the region’s rich cultural heritage. The theme of the event 
-										celebrated India's diverse states through performing arts, and Tarangini's performance showcased the 
-										elegance and intricacy of Odissi dance. </p>
-								</article>
-							</section>
+							<ul class="flex-container flex-container-shared wrap">
+								<li class="flex-item">
+									<article>
+										<header>
+											<span class="date">April 24, 2017</span>
+											<h2><a href="#">Southampton Mela 2024</a></h2>
+										</header>
+										<a class="image fit"><img style="  display: block;
+											margin-left: auto;
+											margin-right: auto;
+											width: 100%;max-height: 30vh; max-width: fit-content;" src="images/southampton-mela-2024.jpg" alt="" /></a>
+										<p>Tarangini Dance Academy was honored to be a part of Southampton Mela 2024, invited by Art Asia to
+											 showcase their artistry on both the main and community stages. Embracing the theme "Monsoon 
+											 Magic of India," the academy delivered captivating performances that reflected the vibrant and
+											  enchanting essence of the monsoon season through classical and semi-classical dance. 
+											  <a href="https://www.youtube.com/watch?v=0b-g7XaAvYE"> Watch the performance here! </a></p>
+									  	
+									</article>
+								</li>
+								<li class="flex-item">
+									<article>
+										<header>
+											<span class="date">April 22, 2017</span>
+											<h2><a href="#">HPCA Durga Puja 2023</a></h2>
+										</header>
+										<a class="image fit"><img style="  display: block;
+											margin-left: auto;
+											margin-right: auto;
+											width: 100%; max-height: 30vh; max-width: fit-content;" src="images/durga-puja-2023.jpg" alt="" /></a>
+										<p>At the HPCA's Durga Puja show of 2022, Tarangini Dance Academy represented the state of Odisha with a 
+											performance that attempted to highlight the region’s rich cultural heritage. The theme of the event 
+											celebrated India's diverse states through performing arts, and Tarangini's performance showcased the 
+											elegance and intricacy of Odissi dance. </p>
+									</article>
+								</li>
+							</ul>
+						</div>	
 
 							<!-- footer -->
-							<ul class="flex-container wrap">
-							<li class="flex-item">
+							<ul class="flex-container-footer flex-container-shared wrap">
+							<li class="flex-item-footer">
 								<div>ADDRESS</div>
 								<div>Otterbourne Village Hall</div>
 								<div>Cranbourne Dr</div>
@@ -153,7 +162,7 @@
 								<div>Winchester</div>
 								<div>SO21 2ES</div>
 							</li>
-							<li class="flex-item">
+							<li class="flex-item-footer">
 								<div>EMAIL ADDRESS</div>
 								<div>rhythm2k@gmail.com</div>
 								<div>FOLLOW US</div>
@@ -184,7 +193,7 @@
 								</li>
 								</ul>
 							</li>
-							<li class="flex-item" style="align-content: center;">  
+							<li class="flex-item-footer" style="align-content: center;">  
 								<img height="80%" width="80%" src="images/tarangini-logo-no-bg.png">
 							</li>
 							</ul>
